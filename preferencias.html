@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mate.ico" type="image/x-icon">
+    <title>Mateando</title>
+
+    <style>
+                body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(203, 169, 236), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            font-weight: bold;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2d2042;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #5b4974;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #edeef5;
+        }
+        h2{
+            text-align: center;
+            margin: 15px;
+        }
+
+        table {
+            
+            padding: 50px 100px;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgb(203, 169, 236), rgb(255, 233, 236));
+        }
+        
+        col{
+            background-color: rgb(207, 207, 207);
+        }
+
+        td {
+            
+            border: 1px solid rgb(190, 190, 190);
+            padding: 4px 8px;
+        }
+
+        th {
+        
+            border: 1px solid rgb(190, 190, 190);
+            padding: 4px 8px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+            font-weight: bold;
+        }
+
+       .image{
+            text-align: center;
+            height: 150px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MATEANDO</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">Galeria</a></li>
+                <li><a href="contacto.html">Dia Mundial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 >¡Distintos gustos de mate!</h2>
+
+   
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th>Tipo de Yerba</th>
+            <th>Descripcion </th>
+            <th>Recomendacion </th>
+
+            <tr>
+                <td>Yerba mate con palo </td>
+                <td>Si queremos disfrutar de un mate suave, la Yerba Mate tradicional es una buena opción. Posee un promedio de 70% hojas secas y trituradas y un 30% de palo.</td>
+                <td><img class="image" src="assets/img/yerbaconpalo.jpeg" alt="Imagen de Yerba mate con palo"></td>
+            </tr>
+            <tr>
+                <td>Yerba mate sin palo</td>
+                <td>Para los que gustan de un mate más fuerte, duradero y de sabor intenso, la opción es utilizar la Yerba Mate sin palo.</td>
+                <td><img class="image" src="assets/img/yerbasinpalo.jpeg" alt="Imagen de Yerba mate sin palo"></td>     
+            </tr>
+            <tr>
+                <td>Yerba mate compuesta</td>
+                <td>Contiene hierbas como el boldo, tilo, manzanilla, poleo (entre otras).
+                    A las propiedades antioxidantes y energizantes de la Yerba Mate, se suman las propiedades de las hierbas naturales.
+                </td>
+                <td><img class="image" src="assets/img/yerbacompuesta.jpeg" alt="Imagen de Yerba mate compuesta"></td>
+            </tr>
+            <tr>
+                <td>Yerba mate saborizada</td>
+                <td>Para los que prefieren ir cambiando los sabores y no gustan de los mates amargos e intensos, pueden encontrar en las góndolas una amplia variedad de yerbas elaboradas con esencias naturales y sabores que van desde los cítricos (pomelo, limón, naranja).</td>
+                <td><img class="image" src="assets/img/yerbasaborizada.jpeg" alt="Imagen de Yerba mate saborizada"></td>
+            </tr>
+            <tr>
+                <td>Yerba mate para tereré</td>
+                <td>Para su elaboración, se utiliza yerba mate con una molienda más gruesa.El tereré see toma con agua fría o jugos naturales.
+                 Tiene menor contenido de polvo, esto evita que se obstruya la bombilla.</td>
+                <td><img class="image" src="assets/img/yerbaterere.jpeg" alt="Imagen de Yerba mate para terere"></td>
+            </tr>
+            <tr>
+                <td>Yerba mate Barbacuá</td>
+                <td>Es la yerba mate sometida a un proceso de secanza utilizado por los nativos guaraníes. Barbacuá significa "tostado" en guaraní.
+                    Este proceso le da a la Yerba Mate un ligero sabor ahumado o tostado propio de las maderas utilizadas durante el secado de las hojas.</td>
+                <td class="img"><img class="image" src="assets/img/yerbabarbacua.jpeg" alt="Imagen de Yerba mate barbacua"></td>
+            </tr>
+            <tr>
+                <td>Yerba mate orgánica</td>
+                <td>Para su elaboración se tiene en cuenta el cuidado del medio ambiente. Desde la siembra hasta la cosecha, se evita la utilización de agroquímicos.</td>
+                <td><img class="image" src="assets/img/yerbaorganica.jpeg" alt="Imagen de Yerba mate con palo"></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+
+
+</body>
+
+</html>

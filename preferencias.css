@@ -1,0 +1,137 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: linear-gradient(to right, rgb(203, 169, 236), rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b8a8f5;
+}
+.ov-btn-slide-close {
+    background:#6757a0; /* color de fondo */
+    color: #0f0f11; /* color de fuente */
+    border: 2px solid #030305; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-close:before, .ov-btn-slide-close:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: #4741d7; /* color de fondo hover */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .ov-btn-slide-close:after {
+    left: 100%;
+  }
+  .ov-btn-slide-close-active{
+    color: #000000; /* color de fuente hover */
+  }
+  .ov-btn-slide-close:hover:before {
+    left: 0;
+  }
+  .ov-btn-slide-close:hover:after {
+    left: 50%;
+  }
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #6e4d99;
+}
+
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #edeef5;
+}
+h2{
+    text-align: center;
+    margin: 15px;
+}
+
+table {
+    
+    padding: 50px 100px;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(203, 169, 236), rgb(255, 233, 236));
+}
+
+col{
+    background-color: rgb(207, 207, 207);
+}
+
+td {
+    
+    border: 1px solid rgb(190, 190, 190);
+    padding: 4px 8px;
+}
+
+th {
+
+    border: 1px solid rgb(190, 190, 190);
+    padding: 4px 8px;
+    background-color: rgb(162, 162, 162);
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    font-weight: bold;
+}
+
+.image{
+    text-align: center;
+    height: 150px;
+    width: 100px;
+}
+
+
+
+tr:hover{
+    background-color: rgb(155, 114, 201);
+}

@@ -1,115 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Mate.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/contacto.css">
     <title>Mateando</title>
-    <style>
-                body {
-            font-family: "Lucida Console", "Courier New", monospace;
-            background: linear-gradient(to right, rgb(203, 169, 236), rgb(255, 233, 236));
-            padding: 0;
-            margin: 0;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        ul {
-            font-weight: bold;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #2d2042;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #5b4974;
-        }
-
-        h1 {
-            background-color: black;
-            padding: 10px;
-            margin: 0;
-            color: #f7f7fa;
-        }
-
-        input[type=text],
-        input[type=email],
-        textarea,
-        select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            font-weight: bold;
-            width: 100%;
-            background-color: #2d2042;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #654991;
-        }
-
-        div.contenedor-formulario {
-            
-            margin: 50px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 33vw;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
-        .image {
-            padding: 50px 50px;
-            
-        }
-
-        .footer {
-            background-color: #333;
-            color: #FFF;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-            font-weight: bold;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -117,11 +17,13 @@
     <header>
         <h1>MATEANDO</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preferencias.html">Preferencias</a></li>
-                <li><a href="audiovisuales.html">Galeria</a></li>
-                <li><a class="active" href="contacto.html">Dia Mundial</a></li>
+            <ul> 
+        
+                <li><a class="ov-btn-slide-close"href="index.html">Home</a></li> 
+                <li><a class="ov-btn-slide-close"  href="preferencias.html">Preferencias</a></li>
+                <li><a class="ov-btn-slide-close"  href="audiovisuales.html">Galeria</a></li>
+                <li><a class="ov-btn-slide-close-active"  href="contacto.html">Dia Mundial</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -150,9 +52,10 @@
             <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
 
             <label for="motivo">Momento de mate favorito: </label>
-            <input type="radio" id="motivo" name="motivo"><i>Mañana</i>
-            <input type="radio" id="motivo" name="motivo"><i>Tarde</i>
-            <input type="radio" id="motivo" name="motivo"><i>Noche</i>
+            <input type="radio" id="motivo" name="motivo mañana"><i>Mañana</i>
+            <input type="radio" id="motivo" name="motivo tarde"><i>Tarde</i>
+            <input type="radio" id="motivo" name="motivo noche"><i>Noche</i>
+             
 
             <input type="submit" value="Enviar">
 
@@ -168,3 +71,4 @@
 </body>
 
 </html>
+

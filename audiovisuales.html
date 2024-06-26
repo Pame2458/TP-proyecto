@@ -1,108 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Mate.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/audiovisuales.css">
     <title>Mateando</title>
 
-    <style>
-        body {
-            font-family: "Lucida Console", "Courier New", monospace;
-            background: linear-gradient(to right, rgb(203, 169, 236), rgb(255, 233, 236));
-            padding: 0;
-            margin: 0;
-        }
 
-        header {
-            text-align: center;
-        }
-
-        ul {
-            font-weight: bold;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #2d2042;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #5b4974;
-        }
-
-        h1 {
-            background-color: black;
-            padding: 10px;
-            margin: 0;
-            color: #f3f4f8;
-        }
-        .centrado.gallery{
-            width:  200px;
-            height: 200px;
-        }
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 33vw;
-        }
-
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery img {
-            width: 100%;
-            height: auto;
-        }
-
-        div.desc {
-            padding: 15px;
-            text-align: center;
-        }
-
-        .centrado {
-        
-            display: flex;
-            justify-content: center;
-        }
-        .centrado video{
-            float: left;
-            padding: 10px;
-            width: 30%;
-            margin-top: 40px;
-            margin-left: 20px;
-            background-color: rgb(53, 25, 90);
-            border-radius: 2rem;
-        }
-        .footer {
-            background-color: #333;
-            color: #FFF;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-            font-weight: bold;
-        }
-    </style>
 
 </head>
 
@@ -111,26 +19,31 @@
     <header>
         <h1>MATEANDO</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preferencias.html">Preferencias</a></li>
-                <li><a class="active" href="audiovisuales.html">Galeria</a></li>
-                <li><a href="contacto.html">Dia Mundial</a></li>
+            <ul> 
+        
+                <li><a class="ov-btn-slide-close"href="index.html">Home</a></li> 
+                <li><a class="ov-btn-slide-close"  href="preferencias.html">Preferencias</a></li>
+                <li><a class="ov-btn-slide-close-active"  href="audiovisuales.html">Galeria</a></li>
+                <li><a class="ov-btn-slide-close"  href="contacto.html">Dia Mundial</a></li>
+                
             </ul>
         </nav>
     </header>
 
     <div class="centrado">
-        <video  src="video/mate.mp4" autoplay y muted></video>
+        
+            <video  src="video/mate.mp4" autoplay y muted ></video>
+       
     </div>
     
     <div class="centrado">
-        <audio src="audio/audio.mp3" autoplay controls></audio>
+       <audio src="audio/audio.mp3" autoplay controls></audio>
+        
     </div>
 
     <section class="centrado">
         <div class="gallery">
-            <a href="img/img1.jpeg" target="_blank"><img src="img/img1.jpeg" alt="Imagen de mate" width="600"></a>
+            <a href="img/img1.jpeg" ><img src="img/img1.jpeg" alt="Imagen de mate" width="600"></a>
             <div class="desc"></div>
         </div>
         <div class="gallery">
@@ -142,7 +55,7 @@
             <div class="desc"></div>
         </div>
     </section>
-
+    
 
     <footer class="footer">
         <p>Derechos reservados &copy; 2024</p>
